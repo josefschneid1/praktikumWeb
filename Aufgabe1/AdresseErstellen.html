@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Adresse anlegen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <div class="PageContent EditNew">
+    <form method="POST" action="Suchdialog.html">
+        <fieldset class="PageElement">
+            <legend>Neue Adresse anlegen</legend>
+            <label class="FormRow"><span>Name:</span><input type="text" name="name" required></label>
+            <label class="FormRow"><span>E-Mail:</span><input type="email" name="mail" required></label>
+            <label class="FormRow"><span>Postleitzahl:</span><input type="number" name="postcode"required></label>
+            <label class="FormRow"><span>Ort:</span><input type="text" name="city" required></label>
+            <label class="FormRow"><span>Strasse und Hausnummer:</span><input type="text" name="street" required></label>
+            <div class="ButtonGroup">
+                    <a href="Suchdialog.html"><button type="button">abbrechen</button>
+                    </a><button type="submit">speichern</button>
+                </div>        
+        </fieldset>
+    </form>
+</div>
+</body>
+
+</html>

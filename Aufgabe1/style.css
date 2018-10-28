@@ -1,0 +1,95 @@
+body
+{
+    background-color: beige;
+}
+
+.PageContent
+{
+    margin:auto;
+}
+
+.PageElement
+{
+    background-color: lightgrey;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.Search
+{
+    width:960px;
+}
+
+.EditNew
+{
+    width:550px;
+}
+.AddressTable
+{
+    width:100%;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.AddressTable thead
+{
+    color:white;
+    background-color: cornflowerblue;
+}
+
+.AddressTable tbody
+{
+    color:grey;
+}
+
+.AddressTable tbody tr:nth-child(even)
+{
+    background-color: lightskyblue; 
+}
+
+.AddressTable tbody tr:nth-child(odd)
+{
+    background-color: white; 
+}
+
+.FormRow
+{
+    font-weight: bold;
+    display:block;
+    margin-top:12px;
+}
+
+.FormRow span
+{
+    display:inline-block;
+    width:200px;
+}
+
+
+.ButtonGroup
+{
+    margin-top:10px;
+    text-align: center;
+}
+
+.ButtonGroup button
+{
+    background-color: darkorange;
+    color:white;
+    border: 1px solid darkorange;
+    border-radius:3px;
+    padding:6px 12px 6px 12px;
+}
+
+.FormRow input[type="number"]
+{
+    width:180px;
+}
+
+.FormRow input[type="text"], input[type="email"]
+{
+    width:258px;
+}

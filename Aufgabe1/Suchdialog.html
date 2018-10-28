@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Suchdialog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+
+<body>
+    <div class="PageContent Search">
+        <fieldset class="PageElement">
+            <legend>Adressen suchen</legend>
+            <label>
+                <span>Name</span>
+                <input type="text" name="name" size="30">
+            </label>
+            <label>
+                <span>Ort</span>
+                <input type="text" name="city" size="30">
+            </label>
+            <label>
+                <span>Sortierung</span>
+                <select>
+                    <option>Name</option>
+                    <option>PLZ</option>
+                    <option selected>Ort</option>
+                </select>
+            </label>
+            <button><img src="images/search.jpg" alt="search" width="15" height="15"></button>
+        </fieldset>
+        <fieldset class="PageElement">
+            <legend>Gefundene Adressen</legend>
+            <a href="AdresseErstellen.html"><button><img src="images/plus.jpg" alt="plus" width="15" size="15"></button></a>
+            <table class="AddressTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>E-Mail</th>
+                        <th>Ort</th>
+                        <th>PLZ</th>
+                        <th>Strasse+Nummer</th>
+                        <th>Aktion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maier, Peter</td>
+                        <td>maier@online.de</td>
+                        <td>Ingolstadt</td>
+                        <td>85051</td>
+                        <td>Haunwöhrerstrasse 1234</td>
+                        <td>
+                            <a href="AdresseBearbeiten.html"><button><img src="images/editIcon.jpg" alt="edit" widht="15"
+                                        height="15"></button></a>
+                            <button><img src="images/trashIcon.jpg" alt="del" widht="15" height="15"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Müller, Erna</td>
+                        <td>mueller@online.de</td>
+                        <td>Ingolstadt</td>
+                        <td>85051</td>
+                        <td>Am Stadtplatz 1234</td>
+                        <td>
+                            <a href="AdresseBearbeiten.html"><button><img src="images/editIcon.jpg" alt="edit" widht="15"
+                                        height="15"></button></a>
+                            <button><img src="images/trashIcon.jpg" alt="del" widht="15" height="15"></button>
+                        </td>
+                    </tr>
+                    <td>Schmid, Evelyn</td>
+                    <td>schmid@online.de</td>
+                    <td>München</td>
+                    <td>83676</td>
+                    <td>Oktoberfestweg 41</td>
+                    <td>
+                        <a href="AdresseBearbeiten.html"><button><img src="images/editIcon.jpg" alt="edit" widht="15"
+                                    height="15"></button></a>
+                        <button><img src="images/trashIcon.jpg" alt="del" widht="15" height="15"></button>
+                    </td>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+</body>
+
+</html>
