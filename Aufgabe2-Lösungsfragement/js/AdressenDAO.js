@@ -54,7 +54,11 @@ class AdressenDAO {
 		// *** (2) ***
 
 		let isPrefix = function (string, prefix) {
-			if (string.length > 0 && prefix.length <= string.length) {
+			if(prefix.length === 0)
+			{
+				return true;
+			}
+			if (prefix.length <= string.length) {
 				for (let i = 0; i < prefix.length; ++i) {
 					if (prefix.charAt(i) !== string.charAt(i)) {
 						return false;
@@ -62,11 +66,13 @@ class AdressenDAO {
 				}
 				return true;
 			}
-			else
+			else 
+			{
 				return false;
+			}
 		};
-		return (isPrefix(adresse.name, name) || isPrefix(adresse.ort, ort));
-	};
+		return isPrefix(adresse.name, name) && isPrefix(adresse.ort, ort);
+	}
 
 	/**
 	 * Gibt das übergebene AdresseDTO-Array 'liste'' sortiert nach 'sortierung' (= string-Wert 
@@ -80,21 +86,21 @@ class AdressenDAO {
 		{
 			liste.sort(function(adresse1, adresse2)
 			{
-				return adresse1.name.localeCompare(adresse2.name);
+				return adresse2.name.toLowerCase().localeCompare(adresse1.name.toLowerCase());
 			});		
 		}
 		else if(sortierung === 'Ort')
 		{
 			liste.sort(function(adresse1, adresse2)
 			{
-				return adresse1.ort.localeCompare(adresse2.ort);
+				return adresse2.ort.toLowerCase().localeCompare(adresse1.ort.toLowerCase());
 			});	
 		}
 		else if(sortierung === 'PLZ')
 		{
 			liste.sort(function(adresse1, adresse2)
 			{
-				return adresse1.plz - adresse2.plz;
+				return adresse2.plz-adresse1.plz;
 			});
 		}
 		else
@@ -180,7 +186,8 @@ class AdressenDAO {
 	 */
 	loescheAdresse(id) {
 		// *** (4) ***
-		findeAdresseZuId(id).id = -1;
+		this._adressenArray[id].id = -1;
+		this.speichern();
 	}
 
 	/*
