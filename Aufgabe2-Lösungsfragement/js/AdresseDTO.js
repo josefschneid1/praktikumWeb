@@ -57,8 +57,8 @@ class AdresseDTO  {
 	 */
 	pruefe() {
 		// *** (1) ***
-		if(this.id.length > 0 && this.name.length > 0 && this.email.length > 0 && this.ort.length > 0 
-			&& this.plz.length > 0 && this.strasse.length > 0)
+		if(!(this.id.length > 0 && this.name.length > 0 && this.email.length > 0 && this.ort.length > 0 
+			&& this.plz.length > 0 && this.strasse.length > 0))
 		{
 			throw 'Eingabefelder müssen ausgefüllt sein!';
 		}else if(!this.validateEmail(this.email))

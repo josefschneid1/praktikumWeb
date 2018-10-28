@@ -65,7 +65,7 @@ class AdressenDAO {
 			else
 				return false;
 		};
-		return isPrefix(adresse.name, name) || isPrefix(adresse.ort, ort);
+		return (isPrefix(adresse.name, name) || isPrefix(adresse.ort, ort));
 	};
 
 	/**
