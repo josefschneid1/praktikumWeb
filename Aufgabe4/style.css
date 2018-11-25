@@ -1,0 +1,76 @@
+body
+{
+    background-color:lightpink;
+}
+
+.page
+{
+    width:80%;
+    margin:auto;
+}
+
+.picture
+{
+    width:40%;
+    float:left;
+}
+
+.infos
+{
+    width:60%;
+    float:left;
+}
+
+.info
+{
+    display:inline-block;
+    width:150px;
+}
+
+.clearfix
+{
+    clear: both;
+}
+
+.content
+{
+    background-color: black;
+    padding:15px;
+    margin-top: 50px;
+
+}
+
+.nav-link
+{
+    background-color:rgb(26, 115, 145);
+    color:white;
+    font-weight: bold;
+
+}
+
+.tab-content
+{
+    background-color:white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+}
+
+.page > h1
+{
+    text-align: center;
+    color:grey;
+    font-weight: bold;
+}
+
+.tab-pane h1
+{
+    margin:0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a
+{
+    color:black;
+}
