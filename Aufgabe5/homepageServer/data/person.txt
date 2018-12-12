@@ -1,0 +1,1 @@
+{"name":"Maggie 1","picturePath":"\/assets\/img\/maggie.png","birthdate":"2017-08-31","bornIn":"Hollywood","profession":"Schwester"}

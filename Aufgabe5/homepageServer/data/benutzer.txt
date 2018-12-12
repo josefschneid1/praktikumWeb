@@ -1,0 +1,2 @@
+benutzername=Hugo 
+passwort=123
